@@ -39,7 +39,18 @@
   &__social {
     display: flex;
     margin-top: 3rem;
-  }  
+  }
+
+  @media only screen and (min-width: 1200px) and (max-width: 1559px) {
+    & {
+      margin-top: 2rem;
+      flex-direction: row;
+    }
+
+    &__content {
+      width: 30%;
+    }
+  }
 
   @media only screen and (min-width: 1536px) {
     & {
@@ -93,7 +104,7 @@
     object-fit: contain;
   }
 
-  @media only screen and (min-width: 1280px) {
+  @media only screen and (min-width: 1560px) {
     & {
       flex-direction: column;
     }
