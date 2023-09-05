@@ -76,6 +76,7 @@
     bottom: 0;
     left: 0;
     transform: rotate(270deg);
+    display: none;
   }
 
   @media only screen and (min-width: 1024px) {
@@ -115,6 +116,10 @@
     &__share-content {
       width: 18.188rem;
       height: 100%;
+    }
+
+    &__share-icon {
+      display: block;
     }
   }
 
