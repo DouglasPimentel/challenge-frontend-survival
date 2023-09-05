@@ -1,12 +1,14 @@
 ## Challenge Frontend Survival
 
-Teste de programação para Desenvolvedor(a) Front-end - Agência Caju.
+Teste de codificação para Desenvolvedor(a) Front-end na Agência Caju.
 
 ## Objetivo
 
-O objetivo era desenvolver uma página a partir do template.
+O objetivo do desafio de codificação era o desenvolvimento de um website de página única com base em um template fornecido.
 
 ## Techs
+
+Foram utilizada as seguintes tecnologias para desenvolver o projeto.
 
 - Node.js
 - JavaScript
