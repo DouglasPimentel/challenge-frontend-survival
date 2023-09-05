@@ -55,7 +55,7 @@
     bottom: 0;
     right: 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
 
   &__button {
@@ -90,11 +90,6 @@
 
     &__number--is-active {
       font-size: 3.75rem;
-    }
-  
-
-    &__arrow {
-      flex-direction: column;
     }
 
     &__button {
