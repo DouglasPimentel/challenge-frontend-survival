@@ -1,0 +1,101 @@
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &__content {
+    width: 100%;
+		overflow-wrap: break-word;
+		position: relative;
+  }
+
+  &__title {
+    font-size: 4.875rem;
+    color: $color-primary;
+    font-weight: 600;
+    letter-spacing: 0.313rem;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+  &__description {
+    font-family: $font-secondary;
+    font-size: $text-lg;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+
+  &__icon-art {
+    position: absolute;
+    bottom: 0;
+    right: 3rem;
+    z-index: -1;
+  }
+
+  &__social {
+    display: flex;
+    margin-top: 3rem;
+  }  
+
+  @media only screen and (min-width: 1280px) {
+    & {
+      flex-direction: row;
+    }
+
+    &__content {
+      width: 20%;
+			padding-top: 2.5rem;
+			padding-right: 4rem;
+    }
+
+    &__title {
+      font-size: 14rem;
+      line-height: 10.313rem;
+    }
+
+    &__subtitle {
+      position: absolute;
+      font-size: 3.438rem;
+      top: 17rem;
+      left: -15rem;
+      transform: rotate(270deg);
+    }
+
+    &__description {
+      font-size: $text-xl;
+    }
+
+    &__social {
+      position: absolute;
+      bottom: -3rem;
+      left: -5rem;
+      margin-top: 0;
+      font-size: 3.438rem;
+    }
+  }
+}
+
+.social-networks {
+  display: flex;
+  flex-direction: row;
+
+  &__link {
+    display: inline-block;
+  }
+
+  &__icon {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+  }
+
+  @media only screen and (min-width: 1280px) {
+    & {
+      flex-direction: column;
+    }
+  }
+}

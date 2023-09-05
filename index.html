@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>Challenge Frontend Survival</title>
+</head>
+<body>
+  <section class="page homepage">
+    <!-- header -->
+      <header class="header container">
+        <div class="logo">
+          <a class="logo__link" href="#">
+            <img 
+              class="logo__img" 
+              src="/assets/logo-survival-dark.svg" 
+              alt="Logo Survival dark" 
+            />
+          </a>
+        </div>
+        <!-- website navigation desktop -->
+        <nav class="desktop-navigation">
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                our competitors
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                for professionals
+              </a>
+            </li>
+             <li class="menu__item">
+              <a class="menu__link" href="#">
+                contact
+              </a>
+            </li>
+          </ul>
+          <div class="button-wrapper">
+            <div class="translate">
+              <a class="translate__link translate__link--hover" href="#">ENG</a>
+            </div>
+            <div class="login">
+              <a class="login__link" href="#">
+                <img class="login__icon" src="/assets/icon-login.svg" alt="Icon login" />
+              </a>
+            </div>
+            <div class="search">
+              <a class="search__link" href="#">
+                <img class="search__icon" src="/assets/ico-search.svg" alt="Icon search" />
+              </a>
+            </div>
+          </div>
+        </nav>
+        <!-- end website navigation desktop -->
+        <!-- website navigation mobile -->
+        <div class="mobile-menu">
+          <button 
+            id="mobile-button" 
+            class="mobile-menu__button" 
+            type="button" onclick="handleOpenMenuMobile()" 
+            aria-label="Button Menu Mobile"
+          >
+            <img src="/assets/bars.svg" alt="Icon bars">
+          </button>
+        </div>
+        <nav id="mobile-nav" class="mobile-navigation">
+          <div class="mobile-navigation__header">
+            <button 
+              type="button" 
+              onclick="handleCloseMenuMobile()" 
+              aria-label="Button Close Menu Mobile"
+            >
+              <span>X</span>
+            </button>
+          </div>
+          <div class="button-wrapper">
+            <div class="translate">
+              <a class="translate__link translate__link--hover" href="#">
+                ENG
+              </a>
+            </div>
+            <div class="login">
+              <a class="login__link" href="#">
+                <img 
+                  class="login__icon" 
+                  src="/assets/icon-login.svg" 
+                  alt="Icon login" 
+                />
+              </a>
+            </div>
+            <div class="search">
+              <a class="search__link" href="#">
+                <img 
+                  class="search__icon" 
+                  src="/assets/ico-search.svg" 
+                  alt="Icon search" 
+                />
+              </a>
+            </div>
+          </div>
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                our competitors
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                for professionals
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- end website navigation mobile -->
+      </header>
+    <!-- end header -->
+    <main class="content">
+      <!-- hero -->
+      <section class="hero container">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Survive
+          </h1>
+          <h2 class="hero__subtitle">
+            Find out if you can
+          </h2>
+          <p class="hero__description">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+            sed diam nonumy eirmod tempor invidunt ut labor.
+          </p>
+          <div class="hero__icon-art">
+            <img src="/assets/icon-art.png" alt="Icon art" />
+          </div>
+          <div class="hero__social">
+            <ul class="social-networks">
+              <li class="social-networks__item">
+                <a class="social-networks__link" href="#">
+                  <img 
+                    class="social-networks__icon" 
+                    src="/assets/icon-facebook-dark.svg" 
+                    alt="Icon Facebook" 
+                  />
+                </a>
+              </li>
+              <li class="social-networks__item">
+                <a class="social-networks__link" href="#">
+                  <img 
+                    class="social-networks__icon" 
+                    src="/assets/icon-twitter-dark.svg" 
+                    alt="Icon Twitter" 
+                  />
+                </a>
+              </li>
+              <li class="social-networks__item">
+                <a class="social-networks__link" href="#">
+                  <img 
+                    class="social-networks__icon" 
+                    src="/assets/icon-youtube-dark.svg" 
+                    alt="Icon Youtube" 
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- carousel sliders --> 
+        <div class="carousel">
+          <div class="carousel__image fade">
+            <img 
+              src="/assets/hero-banner-img-1-min.jpg" 
+              alt=" Hero Banner Image One"
+            />
+          </div>
+          <div class="carousel__image fade">
+            <img 
+              src="/assets/hero-banner-img-2-min.jpg" 
+              alt=" Hero Banner Image Two" 
+            />
+          </div>
+          <div class="carousel__image fade">
+            <img 
+              src="/assets/hero-banner-img-3-min.jpg" 
+              alt=" Hero Banner Image Three" 
+            />
+          </div>
+          <div class="carousel__wrapper-number">
+            <div class="carousel__number">
+              <span onclick="currentSlide(1)">01</span>
+            </div>
+            <div class="carousel__number">
+              <span onclick="currentSlide(2)">02</span>
+            </div>
+            <div class="carousel__number">
+              <span onclick="currentSlide(3)">03</span>
+            </div>
+          </div>
+          <div class="carousel__arrow">
+            <button 
+              class="carousel__button carousel__button-prev" 
+              type="button" 
+              onclick="plusSlides(-1)" 
+              aria-label="Button Prev"
+            >
+              <img 
+                src="/assets/icon-arrow-light.svg" 
+                alt="Icon arrow light"
+              >
+            </button>
+            <button 
+              class="carousel__button carousel__button-next" 
+              type="button" onclick="plusSlides(1)" 
+              aria-label="Button Next"
+            >
+              <img 
+                src="/assets/icon-arrow-dark.svg" 
+                alt="Icon arrow dark"
+              >
+            </button>
+          </div>
+        </div>
+        <!-- end carousel sliders --> 
+      </section>
+      <!-- end hero -->
+      <!-- section challenge -->
+      <section class="challenge container">
+        <div class="challenge__popular">
+          <h2 class="challenge__title">Popular challenges</h2>
+          <article class="card-skill">
+            <div class="card-skill__image">
+              <img src="/assets/skill-image-1.jpg" alt="Skill One" />
+            </div>
+            <div class="card-skill__content">
+              <h2 class="card-skill__subtitle">key skills</h2>
+              <h3 class="card-skill__title">Friction-Based Fire Making</h3>
+              <p class="card-skill__description">
+                Quis autem vel eum iure reprehenderit qui in ea voluptate 
+                velit esse quam nihil molestiae consequatur, vel illum qui dolorem.
+              </p>
+              <a class="button button-dark" href="#">
+                <span>
+                  <img src="/assets/btn-vise.svg" alt="Icon vise">
+                </span>
+                <span>
+                  Find out more
+                </span>
+              </a>
+            </div>
+          </article>
+          <article class="card-skill">
+            <div class="card-skill__image">
+              <img src="/assets/skill-image-2.jpeg" alt="Skill One" />
+            </div>
+            <div class="card-skill__content">
+              <h2 class="card-skill__subtitle">
+                key skills
+              </h2>
+              <h3 class="card-skill__title">
+                Make your own shelter
+              </h3>
+              <p class="card-skill__description">
+                Quis autem vel eum iure reprehenderit qui in ea voluptate 
+                velit esse quam nihil molestiae consequatur, vel illum qui dolorem.
+              </p>
+              <a class="button button-dark" href="#">
+                <span>
+                  <img src="/assets/btn-vise.svg" alt="Icon vise">
+                </span>
+                <span>
+                  Find out more
+                </span>
+              </a>
+            </div>
+          </article>
+          <article class="card-skill">
+            <div class="card-skill__image">
+              <img src="/assets/skill-image-3.jpeg" alt="Skill One" />
+            </div>
+            <div class="card-skill__content fade">
+              <h2 class="card-skill__subtitle">
+                key skills
+              </h2>
+              <h3 class="card-skill__title">
+                Prepare a meal in the forest
+              </h3>
+              <p class="card-skill__description">
+                Quis autem vel eum iure reprehenderit qui in ea voluptate 
+                velit esse quam nihil molestiae consequatur, vel illum qui dolorem.
+              </p>
+              <a class="button button-dark" href="#">
+                <span>
+                  <img src="/assets/btn-vise.svg" alt="Icon vise">
+                </span>
+                <span>
+                  Find out more
+                </span>
+              </a>
+            </div>
+          </article>
+        </div>
+        <div class="challenge__mission">
+          <span class="challenge__mission-number">
+            01
+          </span>
+          <h2 class="challenge__mission-title">
+            endurance
+          </h2>
+          <span class="challenge__mission-subtitle">
+            challenges
+          </span>
+          <div class="challenge__mission-image">
+            <img src="/assets/boots-image.png" alt="Boots">
+          </div>
+          <p class="challenge__mission-description">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
+            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+          </p>
+          <a class="button button-dark" href="#">
+            <span>
+              <img src="/assets/btn-vise.svg" alt="Icon vise">
+            </span>
+            <span>
+              Find out more
+            </span>
+          </a>
+        </div>
+      </section>
+       <!-- end section challenge -->
+       <!-- section results -->
+       <section class="results container">
+        <div class="results__content">
+          <h2 class="results__content-subtitle">completed challenges</h2>
+          <span class="results__content-number">13</span>
+          <p class="results__content-description">You have <span>78%</span> chance for survival</p>
+          <a class="button button-dark" href="#">
+            <span>
+              <img src="/assets/btn-vise.svg" alt="Icon vise">
+            </span>
+            <span>
+              See more
+            </span>
+          </a>
+          <span class="results__content-your">your results</span>
+        </div>
+        <div class="results__share">
+          <div class="results__share-content">
+            <h2 class="results__share-content-title">
+              share your results on social media
+            </h2>
+            <p class="results__share-content-description">
+              Lorem ipsum dolor sit amet, consetetur diam nonumy tempor.
+            </p>
+            <a class="button button-light" href="#">
+              <span>
+                <img src="/assets/btn-vise.svg" alt="Icon vise">
+              </span>
+              <span>
+                see results from your friends
+              </span>
+            </a>
+          </div>
+          <div class="results__share-icon">
+            <img src="/assets/icon-art.png" alt="Icon art">
+          </div>
+        </div>
+       </section>
+       <!-- end section results -->
+    </main>
+    <!-- footer -->
+    <footer class="footer container">
+      <div class="footer__logo">
+        <a href="#">
+          <img 
+            src="/assets/logo-survival-light.svg" 
+            alt="Logo survival light" 
+          />
+        </a>
+      </div>
+      <nav class="footer__navigation">
+        <div class="footer__navigation-content">
+          <h3 class="footer__navigation-title">
+            Challenges
+          </h3>
+          <ul class="footer__navigation-menu">
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">
+                Endurance
+              </a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">
+                Survival
+              </a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#">
+                Key skills
+              </a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#">
+                Survival kit
+              </a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#">
+                Shelter making
+              </a>
+            </li>
+            <li>
+              <a class="footer__navigation-link" href="#">
+                Food challenge
+              </a>
+            </li>
+          </ul>
+          <div class="footer__social">
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <img 
+                    src="/assets/icon-facebook-light.svg" 
+                    alt="Icon Facebook light" 
+                  />
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <img 
+                    src="/assets/icon-twitter-light.svg" 
+                    alt="Icon Twitter light" 
+                    />
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#">
+                  <img 
+                    src="/assets/icon-youtube-light.svg" 
+                    alt="Icon Youtube light" 
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__navigation-content">
+          <h3 class="footer__navigation-title">
+            Advices
+          </h3>
+          <ul class="footer__navigation-menu">
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">
+                Mountain survival
+              </a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">
+                Forest challenges
+              </a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">
+                Key skills
+              </a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">
+                How to make your shelter
+              </a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">
+                What to eat in forest
+              </a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">
+                How to stay safe
+              </a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">
+                How to wear
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__navigation-content">
+          <h3 class="footer__navigation-title">Gallery</h3>
+          <ul class="footer__navigation-menu">
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">
+                Foto gallery
+              </a>
+            </li>
+            <li class="footer__navigation-item">
+              <a class="footer__navigation-link" href="#">
+                Video gallery
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <!-- end footer -->
+  </section>
+  <script src="/js/index.js"></script>
+</body>
+</html>

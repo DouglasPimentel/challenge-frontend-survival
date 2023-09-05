@@ -1,0 +1,17 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43" width="43" height="43">
+	<title>btn_vise</title>
+	<defs>
+		<image width="38" height="39" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAnCAYAAABjYToLAAAAAXNSR0IArs4c6QAAA3BJREFUWEfN2E+ITVEcwPHvufNEUYYsFPPmTynZEIr3iEbJbKYokY3k34YFKxbKvw1ZEEt/wlpmQaFZDIv33thIsSA0M55iNigLjPvu0Xl37nv3zjvv3nPue8pZ3t75nc/5/c6/nuA/beI/dZEIGyO/ysFb2c3onXZMokxuoYQjWUrn4+LFwsbJ5TtwHgrkfA95KEvpVis4hRKIYRCrPbibpbAPkLqYTWEKlcF5AszzO0oP2L2U4r00uNesmNdJ5zOFCvor3AcKB/rBnRlTC2tE1bq5IPfY4nzUgkfAxpkACUPvKeyaiWuATbBuaweZ+/VMNeTHCheHCiLrcBGYQjlkHgiYnVAuI5wJKoz7xeSeZbz/rb7VYBaoIFYszgYVSsLwTyYHFa4GK5MfEojttgvbwxvIUlKbpNbG6JkziyXDujUVF1/CL4Hbv5TnozVYK8HA29FF6bEaVMXJsGRIwIDNJBUqHCeyxlKmXx1E1aAun5+mQQGuxBsMJhdZY8HsWsPJ1wKx1iZTCqU7grTnWAu46kEukm+6xA3U9ORPi6veEWa42F0de1fqrhHTMiXgEs/BxNdF+OI1RdUPTV1Zze7cRJgapH046Zm+Uoxg7cFhjNIeF3HlesuaRXOZ/Q5Ep01Z1XrzkOe6KZ027WecsdPgHCR/XSD2+287465Vi0R+reBt7WH0hQnOKHoU5Q/jN6PuNYcNLjFyI6q+5/4lLhbWHNU6zkVu6KX0pllZY2Fl8jf9NZXwWElVVr64eP3NcE1hH9lw2YFjJgvV3wppNkRznBZmgwoXVSC/2x8lelwDLA1q+jg46+LdnoUzAqLHJNOhSX1xqeR6GR0PvkVgraC6KJ5RQcdY35MGB3L8T3XN+bjwm/+CQJywmWmQqQAV9FW4DB0lAYvt4tVxYdgZgTC+MqZRF7sontQNPkZueQZnxA4nJ6Zgcx/FiUgpy+SNcR5cyVI4HpcRO5x8OwXbFEp7p3wkf8pBxP4TY4Kql9UkcwpV2dzH80nt4g8+lskdFTjXdNmwQZnhGlGxt7AOlwYVxYmCQCysT1i+nKIyEM5UbMaimRNXQQiJvNVF8YDdLov+epz1qztwhn2cfFnhx5ZuXn3TxUx8XXwit1fibLpB4fBZUP+RtdSmcZc8fuxshootZUujt6FzYsbaMEaqEH8B/TePNyzGsCIAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre } 
+		.t0 { font-size: 17px;line-height: 53px;text-transform: uppercase;fill: #000000;font-weight: 600;font-family: "Teko-SemiBold", "Teko" } 
+	</style>
+	<g id="btn_vise">
+		<text id="Find out more" style="transform: matrix(1,0,0,1,-1010,-197)" >
+			<tspan x="0" y="0" class="t0" dx="0 1 1 1 1 1 1 1 1 1 1 1 1 1" >FIND OUT MORE
+</tspan>
+		</text>
+		<use id="+" href="#img1" transform="matrix(1,0,0,1,2,1)"/>
+	</g>
+</svg>

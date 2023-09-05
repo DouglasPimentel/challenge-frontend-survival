@@ -1,0 +1,15 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 18" width="26" height="18">
+	<title>ico_arrow</title>
+	<style>
+		.s0 { fill: none;stroke: #edf0f2;stroke-linecap: round;stroke-miterlimit:100;stroke-width: 2 } 
+	</style>
+	<g id="ico_arrow">
+		<path id="Line 10" class="s0" d="m17 1l8 8"/>
+		<path id="Line 11" class="s0" d="m17 17l8-8"/>
+		<path id="Line 12" class="s0" d="m1 9h24"/>
+		<g id="ico_arrow">
+			<path id="Line 10" class="s0" d="m13 4l5 5"/>
+			<path id="Line 11" class="s0" d="m12.5 14l5.5-5"/>
+		</g>
+	</g>
+</svg>

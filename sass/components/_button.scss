@@ -1,0 +1,26 @@
+.button {
+  font-size: 17px;
+  color: $color-black;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  transition: color 0.5s ease-in-out;
+}
+
+.button-dark {
+  color: $color-black;
+
+  &:hover {
+    color: $color-primary;
+  }
+}
+
+.button-light {
+  color: $color-white;
+
+  &:hover {
+    color: $color-black;
+  }
+}

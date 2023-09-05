@@ -1,0 +1,126 @@
+.results {
+  position: relative;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+
+  &__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__content-subtitle {
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  &__content-number {
+    font-size: 17.5rem;
+    color: $color-primary;
+    line-height: 1;
+    font-weight: 600;
+  }
+
+  &__content-description {
+    font-size: 3.75rem;
+    font-weight: 600;
+
+    span {
+      color: $color-primary;
+    }
+  }
+
+  &__content-your {
+    font-size: 6rem;
+    color: $color-white;
+  }
+
+  &__share {
+    position: relative;
+    width: 100%;
+    background-image: url(../../assets/share-your-results-image.jpeg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__share-content {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 17rem 2rem 2rem;
+    border: 15px solid $color-primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  &__share-content-title {
+    font-size: 3.125rem;
+    color: $color-white;
+    text-transform: uppercase;
+  }
+
+  &__share-content-description {
+    font-size: 2.25rem;
+    color: $color-white;
+  }
+
+  &__share-icon {
+    position: absolute;
+    width: 135px;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    transform: rotate(270deg);
+  }
+
+  @media only screen and (min-width: 1024px) {
+    & {
+      flex-direction: row;
+    }
+
+    &__content {
+      width: 35%;
+      justify-content: center;
+    }
+
+    &__content-number {
+      margin-top: -30px;
+    }
+
+    &__content-description {
+      margin-top: -4.688rem;
+    }
+
+    &__content-your {
+      position: absolute;
+      top: 37%;
+      left: -3.063rem;
+      font-size: 11.813rem;
+      text-transform: uppercase;
+      transform: rotate(270deg);
+      z-index: -1;
+    }
+
+    &__share {
+      width: 65%;
+      height: 100%;
+      padding: 5rem 0;
+    }
+
+    &__share-content {
+      width: 18.188rem;
+      height: 100%;
+    }
+  }
+
+  @media only screen and (min-width: 1280px) {
+    &__content-description {
+      padding-right: 15.625rem;
+    }
+  }
+}

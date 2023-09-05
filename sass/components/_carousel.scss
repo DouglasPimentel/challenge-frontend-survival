@@ -1,0 +1,105 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  margin-top: 4rem;
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    display: none;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      vertical-align: middle;
+    }
+  }
+
+  &__wrapper-number {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 1.25rem;
+    transition: all 1s ease-in-out;
+  }
+
+  &__number {
+    font-size: 17px;
+    cursor: pointer;
+  }
+
+  &__number--is-active {
+    position: relative;
+    font-size: 2.75rem;
+    font-weight: 700;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 2px;
+      right: 0;
+      width: 5rem;
+      height: 1px;
+      background-color: $color-primary;
+    }
+  }
+
+  &__arrow {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__button {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__button-prev {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+
+  &__button-next {
+    background-color: $color-white;
+    color: $color-black;
+  }
+
+  @media only screen and (min-width: 1280px) {
+    & {
+      width: 80%;
+      margin-top: 0;
+    }
+
+    &__wrapper-number {
+      top: 50%;
+      right: -7rem;
+      transform: translateY(-50%);
+      flex-direction: column;
+    }
+
+    &__number--is-active {
+      font-size: 3.75rem;
+    }
+  
+
+    &__arrow {
+      flex-direction: column;
+    }
+
+    &__button {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+  }
+}

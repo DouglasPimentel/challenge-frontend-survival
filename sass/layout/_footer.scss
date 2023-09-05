@@ -1,0 +1,84 @@
+.footer {
+  margin-top: 8rem;
+  padding: 3rem 3rem 1rem;
+  background-image: url("../../assets/bg-footer-min.jpg");
+  background-position: center right;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3rem;
+
+  &__logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &__navigation {
+    width: 100%;
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+  }
+
+  &__navigation-title {
+    margin-bottom: 1.25rem;
+    font-size: 2.25rem;
+    color: $color-primary;
+    text-transform: uppercase;
+  }
+
+  &__navigation-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+  }
+
+  &__navigation-link {
+    font-family: $font-secondary;
+    font-size: $text-sm;
+    color: $color-white;
+    font-weight: 400;
+    transition: color 0.5s ease-in-out;
+
+    &:hover {
+      color: $color-black;
+    }
+  }
+
+  &__social-list {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+  }
+
+  &__social-link {
+    img {
+      width: 1.75rem;
+      height: 1.75rem;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    & {
+      flex-direction: row;
+      gap: 0;
+    }
+
+    &__logo {
+      width: 25%;
+    }
+
+    &__navigation {
+      width: 75%;
+      display: flex;
+      gap: 6rem;
+    }
+
+    &__social-list {
+      margin-top: 5rem;
+    }
+  }
+}
