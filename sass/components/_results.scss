@@ -1,6 +1,6 @@
 .results {
   position: relative;
-  margin-top: 10rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
 
@@ -81,6 +81,7 @@
 
   @media only screen and (min-width: 1024px) {
     & {
+      margin-top: 10rem;
       flex-direction: row;
     }
 
